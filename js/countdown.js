@@ -45,7 +45,7 @@ function getTimeRemaining(endtime) {
 //     ['Dec 30 2022', 'Jan 20 2023']
 //     ];
 
-  const deadline = new Date(Date.parse('Dec 14 2023') + 30 * 24 * 60 * 60 * 1000);
+  const deadline = new Date(Date.parse('December 14 2023') + 30 * 24 * 60 * 60 * 1000);
 
   initializeClock('clockdiv', deadline);
 
