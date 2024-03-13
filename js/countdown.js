@@ -24,7 +24,7 @@ function getTimeRemaining(endtime) {
     function updateClock() {
       const t = getTimeRemaining(endtime);
   
-      daysSpan.innerHTML = t.days;
+      daysSpan.innerHTML = ('0' + t.days).slice(-2)
       hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
@@ -45,7 +45,7 @@ function getTimeRemaining(endtime) {
 //     ['Dec 30 2022', 'Jan 20 2023']
 //     ];
 
-  const deadline = new Date(Date.parse('December 14 2023') + 30 * 24 * 60 * 60 * 1000);
+  const deadline = new Date(Date.parse('March 12 2024') + 7 * 24 * 60 * 60 * 1000);
 
   initializeClock('clockdiv', deadline);
 

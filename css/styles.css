@@ -11405,7 +11405,162 @@ p {
     margin-right: 0;
   }
 }
+
+
+
+
+
+
+
 header.masthead {
+  position: relative;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+}
+
+header.masthead .video-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+header.masthead video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+header.masthead .container.overlay {
+  position: relative;
+  z-index: 100;
+}
+
+
+
+
+
+
+
+
+header.masthead video {
+  display: none; /* Hide all videos initially */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+}
+
+header.masthead .active-video {
+  display: block; /* Show only the active video */
+}
+
+.video-controls {
+  position: absolute;
+  z-index: 200; /* Ensure controls are clickable */
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-controls button {
+  background-color: #007bff; /* Example: blue background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 20px; /* Increase font size */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0.8; /* Slightly transparent */
+  transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.video-controls button:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+.video-controls {
+  position: absolute;
+  z-index: 200; /* Ensure controls are clickable */
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Add padding to move buttons inward */
+}
+
+
+.next {
+  right: 20px;
+}
+
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5); /* Optional: adds background color */
+  border-radius: 50%; /* Optional: makes the buttons circular */
+}
+
+.previous:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.fa:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -11415,7 +11570,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-}
+} */
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;

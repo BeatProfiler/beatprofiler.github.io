@@ -19,6 +19,8 @@
         <link href="css/responsive.css" rel="stylesheet" />
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
         
@@ -59,33 +61,12 @@
 
 
         <!-- Masthead-->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container">
-                
-                <!-- <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
-                                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span class="d-flex align-items-center">&nbsp;CNN News</span></div>
-                                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a> <span class="dot"></span> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </a> <span class="dot"></span> <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse </a>
-                                </marquee>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <style>
-                    body{background: #eee}.news{width: 160px}.news-scroll a{text-decoration: none}.dot{height: 6px;width: 6px;margin-left: 3px;margin-right: 3px;margin-top: 2px !important;background-color: rgb(207,23,23);border-radius: 50%;display: inline-block}
-                </style> -->
-                
                 <div class="masthead-heading">Welcome To BeatProfiler!</div>
-
                 <div class="masthead-subheading">An All-in-one Platform For Cardiac Imaging</div>
-
-                
                 <h2 class="subtitle-typed" style="color:#fff; "><i class="fa-solid fa-bullhorn"></i><span class="typing" ></span></h2>
                     
-                
                 <style>
                     .subtitle-typed {
                         font-size: 1.5rem;
@@ -94,8 +75,8 @@
                         font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                       }
                 </style>
+                
                 <br/>
-                <!-- typed.js -->
                 <script src="js/typed.min.js"></script>
                 <script type="text/javascript">
                     var typed = new Typed('.typing',{
@@ -108,12 +89,199 @@
 
                 <a class="btn btn-warning btn-lg text-uppercase" href="#services">Learn More</a>
             </div>
+        </header> -->
+
+
+
+
+
+        
+
+        
+
+        <!-- <header class="masthead">
+            <div class="video-container">
+                <video playsinline autoplay muted loop id="bgVideo">
+                    <source src="../assets/calcium5.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="container overlay">
+                <div class="masthead-heading">Welcome To BeatProfiler!</div>
+                <div class="masthead-subheading">An All-in-one Platform For Cardiac Imaging</div>
+                <h2 class="subtitle-typed" style="color:#fff;"><i class="fa-solid fa-bullhorn"></i><span class="typing"></span></h2>
+
+                <style>
+                    .subtitle-typed {
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                        margin-bottom: 25px;
+                        font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                      }
+                </style>
+                
+                <br/>
+                <script src="js/typed.min.js"></script>
+                <script type="text/javascript">
+                    var typed = new Typed('.typing',{
+                    strings: [" Coming up soon!"],
+                    loop: true,
+                    typeSpeed: 60,
+                    backSpeed: 50
+                    });
+                </script>
+
+                <a class="btn btn-warning btn-lg text-uppercase" href="#services">Learn More</a>
+
+
+            </div>
+        </header> -->
+
+
+
+
+
+
+
+
+        <header class="masthead">
+            <div class="video-container">
+                <!-- Video 1 -->
+                <video playsinline autoplay muted loop id="video1" class="active-video">
+                    <source src="../assets/calcium5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- <video playsinline muted loop id="video2">
+                    <source src="../assets/calcium4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video playsinline muted loop id="video3">
+                    <source src="../assets/calcium3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>  -->
+            </div>
+
+            <!-- <div class="slide">
+                <video playsinline autoplay muted loop id="video1" class="active-video">
+                    <source src="../assets/calcium5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+
+
+            <!-- <div class="video-controls">
+                
+                <a class="previous" id="slideLeft">
+                    <i class="fa fa-chevron-circle-left" style="font-size: 32px;"
+                       onmouseover="this.style.transform='rotate(360deg)'; this.style.transition='1s'; this.style.color='white';"
+                       onmouseout="this.style.transform=''; this.style.color='';">
+                    </i>
+                </a>
+
+                <a class="next" id="slideRight">
+                    <i class="fa fa-chevron-circle-right" style="font-size: 32px;"
+                       onmouseover="this.style.transform='rotate(360deg)'; this.style.transition='1s'; this.style.color='white';"
+                       onmouseout="this.style.transform=''; this.style.color='';">
+                    </i>
+                </a>
+
+            </div> -->
+
+            <div class="container overlay">
+                <div class="masthead-heading">Welcome To BeatProfiler!</div>
+                <div class="masthead-subheading">Enpowering cardiac imaging analysis through AI</div>
+                <h2 class="subtitle-typed" style="color:#fff;"><span class="typing"></span></h2>
+                <!-- Additional content and scripts remain unchanged -->
+
+                <style>
+                    .subtitle-typed {
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                        margin-bottom: 25px;
+                        font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                      }
+                </style>
+                
+                <br/>
+                <!-- typed.js -->
+                <script src="js/typed.min.js"></script>
+                <script type="text/javascript">
+                    var typed = new Typed('.typing',{
+                    strings: ["Hello! I am an all-in-one cardiac imaging analysis software", 
+                    "I can do all kinds of analysis", "I can do both brightfield and calcium annlysis", 
+                    "I can handle all kinds of cardiac modals, like cardiac monolayers, cardiac spheroids, and engineered cardiac tissues", 
+                    "Most importantly, I am powered by AI and advanced image processing algorithms, making the analysis so fast and accurate :)", 
+                    "I hope you enjoy!"],
+                    loop: true,
+                    typeSpeed: 60,
+                    backSpeed: 30
+                    });
+                </script>
+
+                <a class="btn btn-warning btn-lg text-uppercase" href="#services">Learn More</a>
+                <!-- Your content here -->
+            </div>
         </header>
+
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let playCounts = 0;
+                const videos = document.querySelectorAll("video");
+                let currentVideoIndex = 0;
+                
+                function switchVideo(index) {
+                    videos[currentVideoIndex].classList.remove("active-video");
+                    videos[currentVideoIndex].pause();
+                    currentVideoIndex = index;
+                    videos[currentVideoIndex].classList.add("active-video");
+                    videos[currentVideoIndex].play();
+                    playCounts = 0; 
+                }
+            
+                document.getElementById("slideLeft").addEventListener("click", function() {
+                    let newIndex = currentVideoIndex - 1 < 0 ? videos.length - 1 : currentVideoIndex - 1;
+                    switchVideo(newIndex);
+                });
+            
+                document.getElementById("slideRight").addEventListener("click", function() {
+                    let newIndex = (currentVideoIndex + 1) % videos.length;
+                    switchVideo(newIndex);
+                });
+            
+                videos.forEach((video, index) => {
+                    video.addEventListener('ended', () => {
+                        playCounts++;
+                        if (playCounts >= 1) {
+                            let newIndex = (index + 1) % videos.length;
+                            switchVideo(newIndex);
+                        } else {
+                            video.play(); 
+                        }
+                    });
+                });
+            
+                switchVideo(0); 
+
+            });
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
         <!-- count-down-->
         <section class="page-section bg-light" id="downloads">
-            <div class="container">
+            <div class="container" style = "margin-bottom: -80px; margin-top: -50px;">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase"> Download </h2>
+                    <!-- <h2 class="section-heading text-uppercase"> Update </h2> -->
 
                     <!-- <h3 class="section-subheading text-muted">
                         We are aiming to release the beta version of BeatProfiler on Feb 1st, 2023
@@ -123,14 +291,66 @@
                         <i class="fa-solid fa-bullhorn"></i> We are aiming to release the beta version of BeatProfiler on Feb 1st, 2023
                     </h4> -->
 
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
                         <h4 class="my-3"> 
-                            <i class="fa-solid fa-bullhorn"></i> Coming up soon. Estimated release date of BeatProfiler v1.0 by Spring, 2024. Upon Paper Acceptance
+                            <i class="fa-solid fa-bullhorn"></i> Coming up soon. Estimated release date of BeatProfiler v1.0 by March 20th, 2024.
                         </h4>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
-                      </div>
+                    </div>
+
+
+                    <div style="max-width: 1200px; margin: 40px auto; padding: 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px; font-weight: 600;">News</h2>
+                        
+                        
+                        <!-- Page 1 -->
+            
+
+
+                        <div id="page-1" style="display: block;">
+                            <ul style="list-style: none; margin: 0; padding: 0;">
+                                <li style="display: flex; align-items: center; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #eee;">
+                                    <div style="flex: 1; margin-right: 20px;">
+                                        <img src="../assets/bp-logo2.png" alt="Image description" style="width: 100%; height: auto; border-radius: 1px;">
+                                    </div>
+                                    <div style="flex: 2;">
+                                        <time datetime="2024-03-20" style="display: block; font-size: 0.9em; color: #888; margin-bottom: 10px; text-align: left;">March 20, 2024</time>
+                                        <p style="margin: 0; font-size: 1.1em; color: #555; text-align: left;">We're excited to announce that both Mac and Windows versions of BeatProfiler are officially online!</p>
+                                    </div>
+                                </li>
+                                <!-- Repeat the li element for more entries -->
+                            </ul>
+                        </div>
+
+
+                        <div id="page-1" style="display: block;">
+                            <ul style="list-style: none; margin: 0; padding: 0;">
+                                <li style="display: flex; align-items: center; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #eee;">
+                                    <div style="flex: 1; margin-right: 20px;">
+                                        <img src="../assets/ieee.png" alt="Image description" style="width: 100%; height: auto; border-radius: 1px;">
+                                    </div>
+                                    <div style="flex: 2;">
+                                        <time datetime="2024-03-13" style="display: block; font-size: 0.9em; color: #888; margin-bottom: 10px; text-align: left;">March 13, 2024</time>
+                                        <p style="margin: 0; font-size: 1.1em; color: #555; text-align: left;">We're excited to announce that our paper "BeatProfiler: Multimodal <i>in vitro</i> Analysis of Cardiac Function Enables Machine Learning Classification of Diseases and Drugs" has been accepted
+                                            by <i>IEEE</i> Open Journal of Engineering in Medicine and Biology.</p>
+                                    </div>
+                                </li>
+                                <!-- Repeat the li element for more entries -->
+                            </ul>
+                        </div>
+
+
+                        <!-- Pagination -->
+                        <div style="text-align: center; margin-top: 30px;">
+                            <button class="btn btn-info" style="margin-right: 5px; padding: 5px 10px; border: none; color: white; border-radius: 5px; cursor: pointer;">Prev</button>
+                            <span style="font-size: 1.1em; color: #555;">Page 1 of 1</span>
+                            <button class="btn btn-info" style="margin-left: 5px; padding: 5px 10px; border: none; color: white; border-radius: 5px; cursor: pointer;">Next</button>
+                        </div>
+                    </div>
+
+
 
                       <!-- <div class="container">
                         <div class="row">
@@ -152,10 +372,9 @@
 
 
                       
-                    <br/>
 
                 
-                      <div id="clockdiv">
+                      <!-- <div id="clockdiv">
                         <div>
                           <span class="days"></span>
                           <div class="smalltext">Days</div>
@@ -172,42 +391,335 @@
                           <span class="seconds"></span>
                           <div class="smalltext">Seconds</div>
                         </div>
-                      </div>
+                      </div> -->
 
-                      <style>
-                        #clockdiv{
-                            font-family: sans-serif;
-                            color: #fff;
-                            font-weight: 100;
-                            text-align: center;
-                            font-size: 50px;
-                          }
-                          
-                          #clockdiv > div{
-                            padding: 10px;
-                            border-radius: 3px;
-                            background: #ffce1e;
-                            display: inline-block;
-                          }
-                          
-                          #clockdiv div > span{
-                            padding: 15px;
-                            border-radius: 3px;
-                            background: #fcc600;
-                            display: inline-block;
-                          }
-                          .smalltext{
-                            padding-top: 5px;
-                            font-size: 16px;
-                          }
-                          
-                      </style>
-                      <button class="btn btn-warning btn-lg text-uppercase" style= "margin-top: 50px" disabled>
-                        <i class="fa-solid fa-download"></i> Download
-                    </button>
+                      
                 </div>
+
             </div>
         </section>
+
+
+
+        <section class="page-section" id="xxxx">
+
+            <div class="container text-center">
+                <!-- Title Section -->
+                <h2 class="section-heading">Download & Documentation</h2>
+            </div>
+
+            <div class="container text-center">
+                <!-- Content Section Only -->
+                <div class="content-section">
+                    <div class="container mx-auto p-5">
+                        <div class="flex flex-col items-center justify-center min-h-screen">
+                            <!-- Dynamic Download Section Placeholder -->
+                            <div id="download-options"></div>
+                            
+                            <div class="mt-4">
+                                <a class="text-sm text-blue-500 hover:underline" href="#"> BeatProfiler v1.0 Release Notes </a>
+                                <p class="text-xs mt-2">Trying to find a different version? <a class="text-blue-500 hover:underline" href="#">Find all releases</a></p>
+                                <p class="text-xs">Trouble installing? Check out the <a class="text-blue-500 hover:underline" href="#">installation notes</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="features-container">
+                <div class="feature-item">
+                    <a href="https://kunlunw-beatprofiler-tutorial.readthedocs.io/en/latest/index.html" class="feature-link">
+                        <img src="../assets/readthedocs.png" alt="Documentation Icon">
+                        <h3>Official Documentation</h3>
+                    </a>
+                    <p>Find our documentation, software tutorials and more.</p>
+                </div>
+            
+                <div class="feature-item">
+                    <a href="https://github.com/youngbinkim0/BeatProfiler/issues/new" class="feature-link">
+                        <img src="../assets/github-logo3.png" alt="Discussions Icon">
+                        <h3>Report bugs</h3>
+                    </a>
+                    <p>eport bugs, ask questions, propose new feature/improvements.</p>
+                </div>
+            
+                <div class="feature-item">
+                    <a href="https://github.com/youngbinkim0/BeatProfiler" class="feature-link">
+                        <img src="../assets/github-logo3.png" alt="Development Icon">
+                        <h3>Source code</h3>
+                    </a>
+                    <p>Check out the source code on GitHub.</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+        <style>
+            /* Custom styles for dropdown */
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #ffc107;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              transition: opacity 0.5s ease, visibility 0.5s ease;
+              opacity: 0;
+              visibility: hidden;
+              border-radius: 20px;
+            }
+            .dropdown:hover .dropdown-content {
+              display: block;
+              opacity: 1;
+              visibility: visible;
+            }
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            .dropdown-content a:hover { background-color: #f1f1f1; }
+            .button {
+              background-color: #f3c614;
+              color: white;
+              padding: 8px 16px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .fa-angle-right {
+              transition: transform 0.3s ease;
+            }
+            .dropdown:hover .fa-angle-right {
+              transform: rotate(90deg);
+            }
+
+
+
+
+            /* Flex container */
+            .container.flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            /* Flex item styles */
+            .image-section, .content-section {
+                flex-basis: 50%;
+            }
+
+            /* Ensure the image covers the area properly */
+            .image-section img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+
+            #clockdiv{
+                font-family: sans-serif;
+                color: #fff;
+                font-weight: 100;
+                text-align: center;
+                font-size: 50px;
+            }
+                          
+            #clockdiv > div{
+            padding: 10px;
+            border-radius: 3px;
+            background: #ffce1e;
+            display: inline-block;
+            }
+            
+            #clockdiv div > span{
+            padding: 15px;
+            border-radius: 3px;
+            background: #fcc600;
+            display: inline-block;
+            }
+            .smalltext{
+            padding-top: 5px;
+            font-size: 16px;
+            }
+
+
+
+            .features-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            max-width: 1200px; /* Adjust this value based on your container's width */
+            margin: 0 auto; /* Center the div within its parent */
+            }
+
+            .feature-item img {
+                width: 200px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 8px;
+            }
+
+            .feature-item {
+                flex-basis: 30%;
+                margin: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .features-container {
+                    flex-direction: column;
+                }
+            }
+
+
+            .feature-link {
+                text-decoration: none; /* Removes underline from links */
+                color: inherit; /* Inherits the color from the parent element */
+                display: block; /* Makes the entire area clickable */
+            }
+
+            .feature-link:hover {
+                text-decoration: underline; /* Optional: adds underline on hover for visual feedback */
+            }
+
+          </style>
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+            const dropdown = document.querySelector('.dropdown');
+            const dropbtn = dropdown.querySelector('.dropbtn');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+            dropdown.addEventListener('mouseenter', function() {
+                dropbtn.querySelector('i').classList.replace('fa-caret-right', 'fa-caret-down');
+                dropdownMenu.style.display = 'block';
+            });
+        
+            // Track mouse position to detect if it's outside the dropdown area
+            document.addEventListener('mousemove', function(event) {
+                const bounds = dropdown.getBoundingClientRect();
+                const isOutside = event.clientX < bounds.left - 10 || event.clientX > bounds.right + 10 ||
+                                event.clientY < bounds.top - 10 || event.clientY > bounds.bottom + 10;
+        
+                if (isOutside) {
+                dropbtn.querySelector('i').classList.replace('fa-caret-down', 'fa-caret-right');
+                dropdownMenu.style.display = 'none';
+                }
+            });
+            });
+        </script>
+
+
+
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var os = navigator.platform.toLowerCase();
+              var downloadHTML = '';
+            
+              if (os.indexOf('win') >= 0) { // Windows
+                downloadHTML = `
+                  <div class="dropdown">
+                    <a class="btn btn-warning btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center">
+                      Download for Windows <i class="fas fa-angle-right ml-2"></i>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="#"> <i class="fab fa-windows" mr-2"></i> Windows version 1.0 (exe)</a>
+                  </div>`;
+              } 
+              
+              else if (os.indexOf('mac') >= 0) { // macOS
+                downloadHTML = `
+                  <div class="dropdown">
+                    <a class="btn btn-warning btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center" style="padding: 20px 40px; font-size: 20px;">
+                        Download for macOS <i class="fas fa-angle-right ml-2"></i>
+                    </a>
+
+                    <div class="dropdown-content" style='font-size: 20px;'>
+                      <a href="#"> <i class="fab fa-apple mr-2"></i> macOS version 1.0 (.dmg) </a>
+                      <a href="#"> <i class="fab fa-apple mr-2"></i> macOS Apple silicon (.dmg) beta</a>
+                    </div>
+
+                  </div>`;
+              } 
+              
+              else {
+                // Unsupported OS
+                downloadHTML = `
+                    <div class="dropdown">
+                        <a class="btn btn-warning btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center" style="background-color: #ccc; cursor: not-allowed;" disabled>
+                        Download (Unsupported OS) <i class="fas fa-angle-right ml-2"></i>
+                        </a>
+                    </div>`;
+              }
+            
+              document.getElementById('download-options').innerHTML = downloadHTML;
+            });
+            </script>
+            
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+        
+  
+
+
+
+        
+
+        
 
 
 
@@ -215,7 +727,7 @@
 
 
         <!-- About-->
-        <section class="page-section" id="about" >
+        <section class="page-section bg-light" id="about" >
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
@@ -274,8 +786,7 @@
 
 
 
-        <!-- Services-->
-        <section class="page-section bg-light" id="services">
+        <!-- <section class="page-section bg-light" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">System Requirements</h2>
@@ -286,20 +797,16 @@
 
                 <div class="row text-center">
 
-                    <!-- Windows OS -->
                     <div class="col-md-4">
                         <img class="img-fluid" style="max-width: 50%;
                         height: auto;" src="assets/windows.png" alt="..." />
                         <h4 class="my-3">Windows</h4>
-                        <!-- <p class="text-muted">Windows operating system</p> -->
                     </div>
 
-                    <!-- Windows OS -->
                     <div class="col-md-4">
                         <img class="img-fluid" style="max-width: 50%;
                         height: auto;" src="assets/mac-os-logo.png" alt="..." />
                         <h4 class="my-3">MacOS</h4>
-                        <!-- <p class="text-muted">MacOS</p> -->
                     </div>
 
 
@@ -314,7 +821,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+
+
+
+        
         <!-- Portfolio Grid-->
         <section class="page-section" id="portfolio">
             <div class="container">
@@ -957,5 +1469,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="paging.js" defer></script>
     </body>
 </html>
