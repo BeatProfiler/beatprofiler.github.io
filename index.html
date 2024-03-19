@@ -46,6 +46,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#News">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Demo">Demo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
@@ -150,7 +151,7 @@
             <div class="video-container">
                 <!-- Video 1 -->
                 <video playsinline autoplay muted loop id="video1" class="active-video">
-                    <source src="../assets/calcium5.mp4" type="video/mp4">
+                    <source src="../assets/landing-page-bp.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
 
@@ -193,7 +194,7 @@
 
             <div class="container overlay">
                 <div class="masthead-heading">Welcome To BeatProfiler!</div>
-                <div class="masthead-subheading">Enpowering cardiac imaging analysis through AI</div>
+                <div class="masthead-subheading">Start your batch cardiac analysis in just 3 clicks</div>
                 <h2 class="subtitle-typed" style="color:#fff;"><span class="typing"></span></h2>
                 <!-- Additional content and scripts remain unchanged -->
 
@@ -276,24 +277,16 @@
 
 
 
-
+        
 
 
 
 
         <!-- count-down-->
         <section class="page-section bg-light" id="News">
-            <div class="container" style = "margin-bottom: -80px; margin-top: -50px;">
+            <div class="container">
                 <div class="text-center">
-                    <!-- <h2 class="section-heading text-uppercase"> Update </h2> -->
-
-                    <!-- <h3 class="section-subheading text-muted">
-                        We are aiming to release the beta version of BeatProfiler on Feb 1st, 2023
-                    </h3> -->
-
-                    <!-- <h4 class="my-3"> 
-                        <i class="fa-solid fa-bullhorn"></i> We are aiming to release the beta version of BeatProfiler on Feb 1st, 2023
-                    </h4> -->
+                    <h2 class="section-heading">Latest News</h2>
 
                     <div class="alert alert-info alert-dismissible fade show" role="alert">
                         <h4 class="my-3"> 
@@ -306,7 +299,7 @@
 
 
                     <div style="max-width: 1200px; margin: 40px auto; padding: 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-                        <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px; font-weight: 600;">News</h2>
+                       
                         
                         
                         <!-- Page 1 -->
@@ -405,7 +398,31 @@
 
 
 
-        <section class="page-section" id="downloads">
+
+
+
+        <section class="page-section" id="Demo">
+            <div class="container text-center">
+                <h2 class="section-heading"><i>BeatProfiler:</i> Transforming Cardiac Imaging Analysis</h2>
+
+                <div class="row">
+                    <div class="col-md-12 video-container">
+                        <video controls poster="assets/bp-logo.jpeg" style="width: 100%; height: auto;">
+                            <source src="../assets/calcium4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="page-section bg-light" id="downloads">
 
             <div class="container text-center">
                 <!-- Title Section -->
@@ -681,163 +698,654 @@
               document.getElementById('download-options').innerHTML = downloadHTML;
             });
             </script>
-            
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
+        
+
+
+       
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="page-section" id="about">
+
+        <div class="container text-center">
+            <!-- Title Section -->
+            <h2 class="section-heading">All-in-One Platform for Multi-Modality Analysis</h2>
+        </div>
+
+        <div class="container text-center">
+
+            <div class="tabs text-center">
+                <a class="btn tab-button btn-info btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center" onclick="showCategory('contractility', this)">Contractility</a>
+                <a class="btn tab-button btn-info btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center" onclick="showCategory('calcium', this)">Ca2+/Fluorescence</a>
+                <a class="btn tab-button btn-info btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center" onclick="showCategory('tissue', this)">Uniaxial Tissue Pillar Deflection</a>
+            </div>
+
+              <div id="contractility" class="category-content">
+                <div class="dataset-card">
+                  <h3> Monolayers</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/bf-monolayer.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="tags">
+                    <span class="tag">Brightfield</span>
+                    <span class="tag">phase-contrast</span>
+                    <span class="tag">omnidirectional contraction</span>
+                  </div>
+
+                </div>
+
+                <div class="dataset-card">
+                  <h3>Spheroids</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/bf-spheroids.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tags">
+                    <span class="tag">Brightfield</span>
+                    <span class="tag">phase-contrast</span>
+                    <span class="tag">omnidirectional contraction</span>
+                  </div>
+                </div>
+
+                <div class="dataset-card">
+                  <h3>Tissues</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/bf-tissue.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tags">
+                    <span class="tag">Brightfield</span>
+                    <span class="tag">phase-contrast</span>
+                    <span class="tag">omnidirectional contraction</span>
+                  </div>
+                </div>
+              </div>
+
+            
+              <div id="calcium" class="category-content" style="display:none;">
+                <div class="dataset-card">
+                  <h3>Monolayers</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/calcium-monolayer.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tags">
+                    <span class="tag">Ca2+ Imaging</span>
+                    <span class="tag">Dyes/biomarkers</span>
+                    <span class="tag">tracking pixel intensity</span>
+                  </div>
+                </div>
+
+
+                <div class="dataset-card">
+                  <h3>Spheroids</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/calcium-spheroids.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tags">
+                    <span class="tag">Ca2+ Imaging</span>
+                    <span class="tag">Dyes/biomarkers</span>
+                    <span class="tag">tracking pixel intensity</span>
+                  </div>
+                </div>
+
+
+                <div class="dataset-card">
+                  <h3>Tissues</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/calcium-tissue.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tags">
+                    <span class="tag">Ca2+ Imaging</span>
+                    <span class="tag">Dyes/biomarkers</span>
+                    <span class="tag">tracking pixel intensity</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div id="tissue" class="category-content" style="display:none;">
+                <div class="dataset-card">
+                  <h3>Tissues</h3>
+                  <video playsinline autoplay muted loop class="active-video" width="50%" height="50%"> 
+                    <source src="assets/landing-page-bp.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tags">
+                    <span class="tag">uniaxial contractile force</span>
+                    <span class="tag">pillar tracking</span>
+                  </div>
+                </div>
+              </div>
+
+        </div>
 
 
 
 
         
-  
 
+        <div class="container text-center" style="margin-top: 100px;">
+            <!-- Title Section -->
+            <h2 class="section-heading">Suggested Workflow</h2>
+        </div>
 
-
-        
-
-        
-
-
-
-
-
-
-        <!-- About-->
-        <section class="page-section bg-light" id="about" >
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <!-- <h3 class="section-subheading text-muted">
-                        Provide a workflow of the software below, perhaps a youtube videos or some kind of instruction/documentation
-                    </h3> -->
-                    <div class="row">
-                        <div class="col-md-6" style="text-align:left">
-
-                            <p>
-                                BeatProfiler is a multi-purpose scientific graphical user interface (GUI) for use in the field of cardiac imaging. The GUI fully automates the high-throughput pre-processing and analysis of cardiac fluorescence and brightfield imaging videos for iPSC-CM monolayers, spheroids, and engineered heart tissues.
-                            </p>
-
-                            <p>
-                                It enables precise, automated extraction of photobleach corrected traces, traditional feature metrics, single beat segmentation traces, and image representations of beats for downstream DL applications. The GUI supports numerous video formats and includes advanced masking, photobleach correction, and signal peak algorithms for ultra-precise signal detection and segmentation.
-                            </p>
-
-                            <p>
-                                The GUI is designed to be easy to use, with a download-and-ready-to-use approach and drag-and-drop functionality for video input, allowing users to generate outputs without the need to write any code or install additional packages.
-                            </p>
-                            
-
+        <div class="container carousel-view" style="margin-top: -80px;">
+            
+            <button id="prev-btn" class="prev-btn">
+                <svg viewBox="0 0 512 512" width="30" title="chevron-circle-left">
+                    <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                </svg>
+            </button>
+    
+            
+            <div id="item-list" class="item-list">
+    
+                <div class="item card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+                    <!-- <span class="zoom-icon">&#128269;</span> -->
+                    <div class="img-container">
+                        <img class="rounded-t-lg" src="assets/cell-culture.webp" alt="Placeholder image">
+                        <div class="px-4 py-4"> <!-- Adjusted padding here -->
+                            <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Step1: Cell Culture</h5>
+                            <p class="font-normal text-gray-700 mb-3">Perform regular cell culture</p>
+                            <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
                         </div>
-
-
-                        <div class="col-md-6 video-responsive">
-
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WKXnyIrrmPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-
-
-                        
+                    </div>
+    
+                </div>
+                
+                <div class="item card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+                    <img class="rounded-t-lg" src="assets/batch-experiment.webp" alt="Placeholder image">
+                    <div class="px-4 py-4"> <!-- Adjusted padding here -->
+                        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Step2: Batch Experiment</h5>
+                        <p class="font-normal text-gray-700 mb-3">Conduct your experiment</p>
+                        <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
                     </div>
                 </div>
+    
+                <div class="item card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+                    <img class="rounded-t-lg" src="assets/imaging.webp" alt="Placeholder image">
+                    <div class="px-4 py-4"> <!-- Adjusted padding here -->
+                        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Step3: Imaging</h5>
+                        <p class="font-normal text-gray-700 mb-3">Image your cardiac samples</p>
+                        <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="item card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+                    <img class="rounded-t-lg" src="assets/beatprofiler-analysis.webp" alt="Placeholder image">
+                    <div class="px-4 py-4"> <!-- Adjusted padding here -->
+                        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Step4: BeatProfiler Analysis</h5>
+                        <p class="font-normal text-gray-700 mb-3">Drop the video folder into BP and start analysis</p>
+                        <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="item card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+                    <img class="rounded-t-lg" src="assets/export-results.webp" alt="Placeholder image">
+                    <div class="px-4 py-4"> <!-- Adjusted padding here -->
+                        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Step5: Export Results</h5>
+                        <p class="font-normal text-gray-700 mb-3">Export necessary cardiac metrics from BP</p>
+                        <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="item card max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+                    <img class="rounded-t-lg" src="assets/downstream-application.webp" alt="Placeholder image">
+                    <div class="px-4 py-4"> <!-- Adjusted padding here -->
+                        <h6 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Step6: Downstream Application</h6>
+                        <p class="font-normal text-gray-700 mb-3">Conduct any downstrean analysis and application</p>
+                        <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
+                    </div>
+                </div>
+    
+    
+    
+                <div id="myModal" class="image-modal">
+                    <div class="image-modal-content">
+                      <span class="image-close">&times;</span>
+                      <img id="modal-img" src="" alt="Enlarged image" style="width:100%">
+                    </div>
+                  </div>
+                
+                <!-- Repeat for other cards -->
             </div>
-        </section>
+    
+            <button id="next-btn" class="next-btn">
+                <svg viewBox="0 0 512 512" width="30" title="chevron-circle-right">
+                    <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+                </svg>
+            </button>
+            
+        </div>
+    </section>
+
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    var imageModal = document.getElementById('myModal');
+    var imageModalCloseBtn = imageModal.querySelector(".image-close");
+
+    document.getElementById('item-list').addEventListener('click', function(e) {
+        if (e.target && e.target.nodeName === 'IMG' && e.target.classList.contains('rounded-t-lg')) {
+            var imgSrc = e.target.src;
+            document.getElementById('modal-img').src = imgSrc;
+            imageModal.classList.add('show'); // Use class to show modal
+            imageModal.querySelector('.image-modal-content').classList.add('show');
+        }
+    });
+
+    imageModalCloseBtn.addEventListener('click', function() {
+        imageModal.classList.remove('show'); // Use class to hide modal
+        imageModal.querySelector('.image-modal-content').classList.remove('show');
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == imageModal) {
+            imageModal.classList.remove('show');
+            imageModal.querySelector('.image-modal-content').classList.remove('show');
+        }
+    });
+});
+
+        </script>
+
+
+<script>
+    const prev = document.getElementById('prev-btn');
+const next = document.getElementById('next-btn');
+const list = document.getElementById('item-list');
+
+const itemWidth = 320; // Adjusted for card width including margin
+const padding = 48; // Adjust gap between items if needed
+
+prev.addEventListener('click', () => {
+    list.scrollLeft -= itemWidth + padding;
+});
+
+next.addEventListener('click', () => {
+    list.scrollLeft += itemWidth + padding;
+});
+</script>
 
         <style>
-            .video-responsive{
-                overflow:hidden;
-                padding-bottom:400px;
-                position:relative;
-                height:0;
-            }
 
-            .video-responsive iframe{
-                left:0;
-                top:50px;
-                height:300px;
-                width:100%;
-                position:absolute;
-            }
+
+.tags {
+  margin-top: 5px; /* Space above the tag list */
+  padding: 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #dddddd; /* Blue background */
+  color: #000000; /* White text */
+  padding: 5px 5px; /* Top & Bottom | Left & Right */
+  border-radius: 20px; /* Rounded edges */
+  font-size: 0.8em; /* Smaller font size */
+  margin-right: 5px; /* Space between tags */
+  margin-bottom: 5px; /* Space below each tag */
+  text-transform: lowercase; /* Optional: lowercase looks more casual */
+}
+        
+
+.active-tab {
+  background-color: #007bff; /* Darker blue to indicate active state */
+  color: white;
+  border: 1px solid #0056b3;
+}
+            
+        
+        .tabs {
+          margin-bottom: 20px;
+        }
+        
+        .tab-button {
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 10px 20px;
+          transition: background-color 0.3s;
+          border-radius: 10px;
+        }
+
+        .active-tab,
+.tab-button.active-tab:hover,
+.tab-button.active-tab:focus {
+  background-color: #007bff !important; /* Darker blue for active state, with !important to ensure override */
+  color: white;
+  border: 1px solid #0056b3;
+}
+        
+        .category-content {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        }
+        
+        .dataset-card {
+  flex: 1 1 250px; /* Adjust the flex-basis to a smaller value */
+  max-width: 250px; /* Optional: Set a maximum width to prevent cards from becoming too wide */
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+        
+        .dataset-card h3 {
+          margin-top: 0;
+        }
+        
+        .dataset-card img {
+          max-width: 100%;
+          height: auto;
+        }
+        .card {
+        transition: transform 0.5s; /* Apply transition to the card */
+    }
+    
+        button {
+        border: none;
+        cursor: pointer;
+        color: white;
+        background: none;
+        transition: all .3s ease-in-out;
+    }
+    
+    /* Centering the Learn More button inside the card */
+    .card .px-4.py-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card img.rounded-t-lg {
+        width: 100%; /* Make the image take up the full width of the card */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+        max-height: 200px; /* Optional: limit the image's height */
+        object-fit: cover; /* Ensure the image covers the allotted space without distorting */
+    }
+    
+    
+    .carousel-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding: 44px 0;
+        transition: all 0.25s ease-in;
+    }
+    
+    .item-list {
+        max-width: 1200px;
+        width: 70vw;
+        padding: 50px 10px;
+        display: flex;
+        gap: 20px;
+        scroll-behavior: smooth;
+        transition: all 0.25s ease-in;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .item-list::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .prev-btn, .next-btn {
+        background: none;
+        cursor: pointer;
+    }
+    
+    .item {
+        scroll-snap-align: center;
+        min-width: 300px; /* Adjusted for card width */
+        background-color: white; /* Match card background */
+        border-radius: 0px;
+        display: inline-block; /* Ensure cards are inline */
+    }
+    /* Custom hover effect for cards */
+    .card:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Hover effect for images */
+    .card img.rounded-t-lg:hover {
+      opacity: 0.7;
+      cursor: pointer; /* Indicates the image is clickable */
+      transition: opacity 0.3s ease;
+    }
+    
+    /* Style for the zoom icon */
+    .zoom-icon {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px; /* Adjust size as needed */
+    }
+    
+    .card:hover .zoom-icon {
+      display: block;
+    }
+
+    /* Basic modal styles */
+   /* Adjusted CSS for custom image modal specificity */
+   .image-modal {
+    display: block; /* Always block but will be invisible */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Start fully transparent */
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    /* Transition effect for opacity and visibility */
+    transition: opacity 0.25s, visibility 0.25s;
+}
+
+.image-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: auto;
+    max-width: 600px;
+    /* Optional: Add transition effect for the content as well */
+    transform: translateY(-50px); /* Start slightly above final position */
+    transition: transform 0.25s;
+}
+
+/* When the modal is shown, we want it to be visible and opaque */
+.image-modal.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.25s, visibility 0.25s;
+}
+
+.image-modal-content.show {
+    /* Ends at the final position */
+    transform: translateY(0);
+    transition: transform 0.25s;
+}
+
+.image-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.image-close:hover,
+.image-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
         </style>
 
 
+<script>
+    function showCategory(categoryName, element) {
+  // Hide all categories
+  var categories = document.getElementsByClassName('category-content');
+  for (var i = 0; i < categories.length; i++) {
+    categories[i].style.display = 'none';
+  }
+  
+  // Show the selected category
+  document.getElementById(categoryName).style.display = 'flex';
+  
+  // Remove 'active-tab' class from all tab buttons
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active-tab');
+  }
+  
+  // Add 'active-tab' class to the clicked tab button
+  element.classList.add('active-tab');
+}
+
+
+</script>
 
 
 
-        <!-- <section class="page-section bg-light" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">System Requirements</h2>
-                    <h3 class="section-subheading text-muted">
-                        See what OS BeatProfiler supports and what's the RAM requirement</h3>
-                </div>
+        
 
 
-                <div class="row text-center">
-
-                    <div class="col-md-4">
-                        <img class="img-fluid" style="max-width: 50%;
-                        height: auto;" src="assets/windows.png" alt="..." />
-                        <h4 class="my-3">Windows</h4>
-                    </div>
-
-                    <div class="col-md-4">
-                        <img class="img-fluid" style="max-width: 50%;
-                        height: auto;" src="assets/mac-os-logo.png" alt="..." />
-                        <h4 class="my-3">MacOS</h4>
-                    </div>
 
 
-                    <div class="col-md-4">
-                        <img class="img-fluid" style="max-width: 50%;
-                        height: auto;" src="assets/cpu.png" alt="..." />
-                        <h4 class="my-3">RAM</h4>
-                        <p class="text-muted">
-                            BeatProfiler reads in the entire video into RAM, so it is advised that 
-                            your devices' RAM is <strong>significantly</strong> larger than the <strong>video file size</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+        
 
 
 
         
         <!-- Portfolio Grid-->
-        <section class="page-section" id="features">
+        <section class="page-section bg-light" id="features">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Features</h2>
+                    <h2 class="section-heading">Software Features</h2>
                     <h3 class="section-subheading text-muted">Core features of the software</h3>
                 </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-6 text">
+                        <!-- Text content remains unchanged -->
+                        <p>BeatProfiler is a the first-ever multi-modal cardiac imaging analysis software that's capable of fully automating the high-throughput pre-processing and analysis of cardiac fluorescence and brightfield imaging videos for iPSC-CM monolayers, spheroids, and engineered heart tissues.</p>
+                        <p>Powered by advanced image processing algorithms and AI, it offers unmatchable speed and precision, allowing for automated extraction of photobleach corrected traces, traditional feature metrics, single beat segmentation traces, and tissue forces for downstream analysis and application. </p>
+
+                        <p>Give it a shot for your dataset! Enjoy!</p>
+
+                    
+                    </div>
+    
+    
+                    <div class="col-md-6 image-slider">
+                        <div id="slider">
+                            <img id="slider-img" src="assets/img/portfolio/firstpage.png" style="width: 100%; height: auto;" alt="">
+                        </div>
+    
+                        <button id="prev-slider">
+                            <svg viewBox="0 0 512 512" width="30" title="chevron-circle-left">
+                                <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                            </svg>
+                        </button>
+    
+    
+                        <button id="next-slider">
+                            <svg viewBox="0 0 512 512" width="30" title="chevron-circle-right">
+                                <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+                            </svg>
+                        </button>
+    
+                        <div id="slider-footer">
+                            <p>Page <span id="current-image">1</span> of <span id="total-images">5</span></p>
+                        </div>
+    
+                        <div id="slider-footer">
+                            <!-- Dots will be dynamically added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
@@ -932,7 +1440,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/analysis.png" alt="..." />
+                                <img class="img-fluid" src="assets/export-results.webp" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Analysis results</div>
@@ -945,37 +1453,107 @@
                 </div>
             </div>
         </section>
-        
-        <!-- About-->
-        <!-- <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Workflow/Instruction</h2>
-                    <h3 class="section-subheading text-muted">
-                        Provide a workflow of the software below, perhaps a youtube videos or some kind of instruction/documentation
-                    </h3>
-                    <div class="row">
-                        <div class="col-md-6 text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                            <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some formhumour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some formhumour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
 
-                        </div>
-                        <div class="col-md-6 image">
-                            <img src="assets/beatprofiler.png" style='width: 100%; height: auto' alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+
+
+
+        <style>
+
+            .video-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            
+               .image-slider {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Center the content vertically */
+                position: relative;
+                height: 100%;
+                margin-top: 0%;
+            }
+            
+            #prev-slider, #next-slider {
+                cursor: pointer;
+                position: absolute;
+                top: 45%; /* Align buttons at 50% height of the image */
+                transform: translateY(-50%);
+                border: none; /* Remove border */
+                padding: 5px 10px;
+            }
+            
+            #prev-slider { left: -30px; } /* Adjust as necessary */
+            #next-slider { right: -30px; } /* Adjust as necessary */
+            
+            #slider-img {
+                border-radius: 10px; /* Rounded corners for images */
+                align-self: center; /* Center image horizontally in the flex container */
+            }
+            
+            #slider-footer {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            
+            </style>
+            
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var images = [
+                        "assets/img/portfolio/firstpage.png",
+                        "assets/img/portfolio/secondpage.png", // Replace with your image path
+                        "assets/img/portfolio/thirdpage.png", // Replace with your image path
+                        "assets/img/portfolio/fourthpage.png", // Replace with your image path
+                        "assets/img/portfolio/fifthpage.png", // Replace with your image path
+                    ];
+                    var currentIndex = 0;
+                
+                    function updateImage(index) {
+                        document.getElementById('slider-img').src = images[index];
+                        document.getElementById('current-image').textContent = index + 1;
+                    }
+                
+                    document.getElementById('prev-slider').addEventListener('click', function() {
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            updateImage(currentIndex);
+                        }
+                    });
+                
+                    document.getElementById('next-slider').addEventListener('click', function() {
+                        if (currentIndex < images.length - 1) {
+                            currentIndex++;
+                            updateImage(currentIndex);
+                        }
+                    });
+                
+                    // Initialize
+                    document.getElementById('total-images').textContent = images.length;
+                    updateImage(currentIndex); // Set the first image
+                });
+                </script>
+        
+
+
+
+
+
+        
+
+
+
+
 
 
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Developers</h2>
+                    <h2 class="section-heading">Developers</h2>
                     <h3 class="section-subheading text-muted">Meet the developers of BeatProfiler</h3>
                 </div>
                 <div class="row" style = 'justify-content: center'>
@@ -1006,10 +1584,10 @@
             </div>
         </section>
         <!-- Clients-->
-        <div class="py-5">
+        <div class="py-5 bg-light">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Affiliation</h2>
+                    <h2 class="section-heading">Affiliation</h2>
                 </div>
                 <div class="row" style="justify-content: center">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -1028,7 +1606,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h2 class="section-heading">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Our contact information</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
@@ -1069,11 +1647,11 @@
                               <div class="contact-box">
                                 <h4>Email Us</h4>
                                 <p>
-                                  <a href="mailto: kw2964@columbia.edu">kw2964@columbia.edu</a>
+                                  Kunlun: <a href="mailto: kw2964@columbia.edu">kw2964@columbia.edu</a>
                                 </p>
 
                                  <p>
-                                    <a href="mailto: youngbin.kim@columbia.edu">youngbin.kim@columbia.edu</a>
+                                    Youngbin: <a href="mailto: youngbin.kim@columbia.edu">youngbin.kim@columbia.edu</a>
                                   </p>
 
                               </div>
@@ -1088,8 +1666,12 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; BeatProfiler 2024</div>
-                    <!-- <div class="col-lg-4 text-lg-start">Website design idea by <a href="https://github.com/startbootstrap/startbootstrap-agency">StartBootstrap</a></div> -->
+
+                    <div class="col-lg-4 text-lg-start">
+                        Copyright &copy; BeatProfiler 2024 <br>
+                        Web dev by <a href="https://www.linkedin.com/in/kunlun-wang/" target="_blank" rel="noopener noreferrer">Kunlun (Mark) Wang</a>
+                    </div>
+                    
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/gvnlab?lang=en" target="_blank" aria-label="GVN lab Twitter"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://gvnlab.bme.columbia.edu/" target="_blank" aria-label="GVN lab website"><i class="fa-solid fa-globe"></i></a>
@@ -1126,7 +1708,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Upload Data</h2>
                                     <p class="item-intro text-muted">Some description here: </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/secondpage.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/firstpage.png" alt="..." />
                                     <p>Describe usage</p>
                                     <ul style="text-align:left">
                                         <li>
@@ -1174,7 +1756,7 @@
 
 
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/firstpage.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/secondpage.png" alt="..." />
                                    
                                     <ul class="" style="text-align:left">
                                         <li>
@@ -1444,8 +2026,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Analysis results</h2>
-                                    <p class="item-intro text-muted">Some description here:</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/analysis.png" alt="..." />
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/export-results.webp" alt="..." />
                                     <!-- <p>Describe usage:</p> -->
                                     <!-- <ul class="list-inline">
                                         <li>
@@ -1481,6 +2063,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-<script src="paging.js" defer></script>
+<!-- <script src="paging.js" defer></script> -->
     </body>
 </html>
