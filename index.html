@@ -61,6 +61,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cite">Cite</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>      
@@ -234,8 +235,12 @@
                 </script>
 
 
+                <!-- Example using Bootstrap's margin utility classes -->
+                <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center me-5" href="https://ieeexplore.ieee.org/document/10490213" target="_blank"> <i class="fa-solid fa-file-pdf"></i> <i>IEEE</i> Paper</a>
+                <a class="btn btn-info btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about"><i class="fa-solid fa-magnifying-glass"></i> Learn More</a>
 
-                <a class="btn btn-warning btn-lg text-uppercase text-white font-semibold py-2 px-4 rounded inline-flex items-center" href="#about">Learn More</a>
+
+                
                 <!-- Your content here -->
             </div>
         </header>
@@ -539,6 +544,7 @@
               padding: 12px 16px;
               text-decoration: none;
               display: block;
+              border-radius: 20px;
             }
             .dropdown-content a:hover { background-color: #f1f1f1; }
             .button {
@@ -551,6 +557,7 @@
               font-size: 16px;
               margin: 4px 2px;
               cursor: pointer;
+              border-radius: 20px;
             }
             .fa-angle-right {
               transition: transform 0.3s ease;
@@ -691,10 +698,10 @@
               if (os.indexOf('win') >= 0) { // Windows
                 downloadHTML = `
                   <div class="dropdown">
-                    <a class="btn btn-warning btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <a class="btn btn-warning btn-lg text-white font-semibold py-2 px-4 rounded inline-flex items-center style="padding: 20px 40px; font-size: 20px;">
                       Download for Windows <i class="fas fa-angle-right ml-2"></i>
                     </a>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" style='font-size: 20px;>
                       <a href="https://github.com/youngbinkim0/BeatProfiler/releases/tag/windows-version1.0" target="_blank"> <i class="fab fa-windows" mr-2"></i> Windows-v1.0-universal (.exe)</a>
                   </div>`;
               } 
@@ -1611,8 +1618,47 @@ next.addEventListener('click', () => {
                 </div> -->
             </div>
         </section>
+
+
+        <section class="page-section bg-light" id="cite">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Cite Us & Licensing</h2>
+                    <h3 class="section-subheading text-muted">How to cite BeatProfiler in publications & Licensing information</h3>
+                </div>
+                <!-- New Content Below -->
+                <div class="citation-content">
+                    <h4>If you use Beatprofiler in your publication, please cite us:</h4>
+                    <br/>
+                    <ul>
+                        <li>
+                            <p>Kim, Y., Wang, K., Lock, R., Nash, T., Fleischer, S., Wang, B., Fine, B., Vunjak-Novakovic, G.(2024). <i>BeatProfiler: Multimodal in vitro analysis of cardiac function enables machine learning classification of diseases and drugs.</i> IEEE Open Journal of Engineering in Medicine and Biology, 5, 238-249. <a href="https://ieeexplore.ieee.org/document/10490213" target="_blank" style="text-decoration: underline;">doi</a> | <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10490213" target="_blank" style="text-decoration: underline;">pdf</a></p>
+                        </li>
+
+                        <li>
+                            <p>BeatProfiler is free for research use, for commercial licensing, please contact <a href="https://inventions.techventures.columbia.edu/technologies/automated-software--CU23247" target="_blank" style="text-decoration: underline;">Columbia Technology Ventures</a>.</p>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .underline-link {
+            text-decoration: underline;
+            }
+        </style>
+        
+
+
+
+
+
+
         <!-- Clients-->
-        <div class="py-5 bg-light">
+        <div class="py-5">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading">Affiliation</h2>
